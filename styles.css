@@ -3,14 +3,15 @@
    ======================================== */
 
 :root {
-    --primary-dark: #1a1a1a;
-    --primary-light: #ffffff;
-    --secondary: #4a4a4a;
-    --accent: #0066cc;
-    --accent-light: #e8f0ff;
-    --border: #e0e0e0;
-    --text: #333333;
-    --text-light: #666666;
+    --primary-dark: #0f1419;
+    --primary-darker: #1a1f2e;
+    --secondary-dark: #2d3748;
+    --accent: #00d4ff;
+    --accent-dark: #0099cc;
+    --accent-light: #001a29;
+    --border: #3a4556;
+    --text: #e8eaed;
+    --text-light: #a0aec0;
     --transition: all 0.3s ease;
 }
 
@@ -27,7 +28,7 @@ html {
 body {
     font-family: 'Montserrat', sans-serif;
     color: var(--text);
-    background-color: var(--primary-light);
+    background-color: var(--primary-dark);
     line-height: 1.6;
     font-size: 16px;
 }
@@ -43,13 +44,13 @@ body {
    ======================================== */
 
 .header {
-    background-color: var(--primary-light);
+    background-color: var(--primary-darker);
     border-bottom: 1px solid var(--border);
     position: sticky;
     top: 0;
     z-index: 100;
     backdrop-filter: blur(10px);
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: rgba(15, 20, 25, 0.95);
 }
 
 .header-content {
@@ -64,6 +65,7 @@ body {
     font-size: 1.3rem;
     color: var(--accent);
     letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 .nav {
@@ -104,16 +106,17 @@ body {
    ======================================== */
 
 .hero {
-    padding: 5rem 0;
+    padding: 6rem 0;
     text-align: center;
     border-bottom: 1px solid var(--border);
+    background: linear-gradient(135deg, var(--primary-darker) 0%, var(--secondary-dark) 100%);
 }
 
 .hero-title {
     font-size: 2.8rem;
     font-weight: 700;
-    margin-bottom: 0.5rem;
-    color: var(--primary-dark);
+    margin-bottom: 1rem;
+    color: var(--text);
     letter-spacing: -0.5px;
 }
 
@@ -121,13 +124,33 @@ body {
     font-size: 1.3rem;
     color: var(--accent);
     font-weight: 600;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-keywords {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.8rem;
+    margin-bottom: 2rem;
+}
+
+.keyword {
+    background-color: var(--accent-light);
+    color: var(--accent);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border: 1px solid var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .hero-text {
     font-size: 1rem;
     color: var(--text-light);
-    max-width: 600px;
+    max-width: 650px;
     margin: 0 auto;
     line-height: 1.8;
 }
@@ -150,7 +173,7 @@ section:last-of-type {
     font-weight: 700;
     text-align: center;
     margin-bottom: 2.5rem;
-    color: var(--primary-dark);
+    color: var(--text);
     position: relative;
     padding-bottom: 1rem;
 }
@@ -163,7 +186,7 @@ section:last-of-type {
     transform: translateX(-50%);
     width: 60px;
     height: 3px;
-    background-color: var(--accent);
+    background: linear-gradient(90deg, var(--accent), var(--accent-dark));
 }
 
 /* ========================================
@@ -171,7 +194,7 @@ section:last-of-type {
    ======================================== */
 
 .about {
-    background-color: #fafafa;
+    background-color: var(--primary-darker);
 }
 
 .about-text {
@@ -194,16 +217,17 @@ section:last-of-type {
    ======================================== */
 
 .education {
-    background-color: var(--primary-light);
+    background-color: var(--primary-dark);
 }
 
 .education-item {
-    background-color: var(--accent-light);
+    background-color: var(--secondary-dark);
     padding: 2rem;
     border-radius: 8px;
     border-left: 4px solid var(--accent);
     max-width: 600px;
     margin: 0 auto;
+    box-shadow: 0 4px 12px rgba(0, 212, 255, 0.1);
 }
 
 .education-header {
@@ -215,20 +239,22 @@ section:last-of-type {
 
 .education-header h3 {
     font-size: 1.2rem;
-    color: var(--primary-dark);
+    color: var(--text);
     font-weight: 600;
     flex: 1;
 }
 
 .status {
     background-color: var(--accent);
-    color: var(--primary-light);
+    color: var(--primary-dark);
     padding: 0.4rem 0.8rem;
     border-radius: 20px;
     font-size: 0.75rem;
-    font-weight: 600;
+    font-weight: 700;
     white-space: nowrap;
     margin-left: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .education-institution {
@@ -242,7 +268,7 @@ section:last-of-type {
    ======================================== */
 
 .skills {
-    background-color: var(--primary-light);
+    background-color: var(--primary-darker);
 }
 
 .skill-category {
@@ -256,11 +282,13 @@ section:last-of-type {
 .category-title {
     font-size: 1.1rem;
     font-weight: 600;
-    color: var(--primary-dark);
+    color: var(--accent);
     margin-bottom: 1rem;
     display: inline-block;
     padding-bottom: 0.5rem;
     border-bottom: 2px solid var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .skill-tags {
@@ -276,14 +304,18 @@ section:last-of-type {
     padding: 0.6rem 1.2rem;
     border-radius: 25px;
     font-size: 0.9rem;
-    font-weight: 500;
+    font-weight: 600;
     border: 1px solid var(--accent);
     transition: var(--transition);
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    font-size: 0.8rem;
 }
 
 .skill-tag:hover {
     background-color: var(--accent);
-    color: var(--primary-light);
+    color: var(--primary-dark);
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.3);
 }
 
 /* ========================================
@@ -291,7 +323,7 @@ section:last-of-type {
    ======================================== */
 
 .experience {
-    background-color: #fafafa;
+    background-color: var(--primary-dark);
 }
 
 .experience-grid {
@@ -301,7 +333,7 @@ section:last-of-type {
 }
 
 .experience-card {
-    background-color: var(--primary-light);
+    background-color: var(--secondary-dark);
     padding: 2rem;
     border-radius: 8px;
     border: 1px solid var(--border);
@@ -310,13 +342,13 @@ section:last-of-type {
 
 .experience-card:hover {
     border-color: var(--accent);
-    box-shadow: 0 4px 12px rgba(0, 102, 204, 0.1);
+    box-shadow: 0 8px 24px rgba(0, 212, 255, 0.15);
     transform: translateY(-4px);
 }
 
 .experience-card h3 {
     font-size: 1.1rem;
-    color: var(--primary-dark);
+    color: var(--accent);
     margin-bottom: 0.8rem;
     font-weight: 600;
 }
@@ -332,7 +364,7 @@ section:last-of-type {
    ======================================== */
 
 .contact {
-    background-color: var(--primary-light);
+    background-color: var(--primary-darker);
 }
 
 .contact-info {
@@ -362,15 +394,17 @@ section:last-of-type {
     padding: 1rem;
     color: var(--accent);
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 600;
     border: 2px solid var(--accent);
     border-radius: 8px;
     transition: var(--transition);
+    background-color: transparent;
 }
 
 .contact-link:hover {
     background-color: var(--accent);
-    color: var(--primary-light);
+    color: var(--primary-dark);
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.3);
 }
 
 .contact-icon {
@@ -382,11 +416,12 @@ section:last-of-type {
    ======================================== */
 
 .footer {
-    background-color: var(--primary-dark);
-    color: var(--primary-light);
+    background-color: var(--primary-darker);
+    color: var(--text-light);
     text-align: center;
     padding: 2rem 0;
     margin-top: 3rem;
+    border-top: 1px solid var(--border);
 }
 
 .footer p {
@@ -425,6 +460,15 @@ section:last-of-type {
         font-size: 1.1rem;
     }
 
+    .hero-keywords {
+        margin-bottom: 1.5rem;
+    }
+
+    .keyword {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.75rem;
+    }
+
     .hero-text {
         font-size: 0.95rem;
     }
@@ -449,7 +493,7 @@ section:last-of-type {
 
     .skill-tag {
         padding: 0.5rem 0.8rem;
-        font-size: 0.85rem;
+        font-size: 0.75rem;
     }
 
     .education-header {
@@ -524,6 +568,15 @@ section:last-of-type {
     }
 }
 
+@keyframes glow {
+    0%, 100% {
+        box-shadow: 0 0 5px rgba(0, 212, 255, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 15px rgba(0, 212, 255, 0.5);
+    }
+}
+
 .hero-title,
 .hero-subtitle,
 .hero-text {
@@ -538,10 +591,22 @@ section:last-of-type {
     animation-delay: 0.2s;
 }
 
-/* ========================================
-   UTILIDADES
-   ======================================== */
+.keyword {
+    animation: slideUp 0.6s ease forwards;
+}
 
-.primary-white {
-    --primary-white: #ffffff;
+.keyword:nth-child(1) {
+    animation-delay: 0.3s;
+}
+
+.keyword:nth-child(2) {
+    animation-delay: 0.35s;
+}
+
+.keyword:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.keyword:nth-child(4) {
+    animation-delay: 0.45s;
 }
