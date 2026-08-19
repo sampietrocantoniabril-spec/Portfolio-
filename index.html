@@ -3,77 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portafolio profesional de Abril Sampietro Cantoni - QA Manual">
-    <meta name="keywords" content="QA Manual, Testing, Jira, Portfolio">
+    <meta name="description" content="Portafolio profesional de Abril Sampietro Cantoni - QA Testing">
+    <meta name="keywords" content="QA Testing, Testing Funcional, Jira, Portfolio">
     <meta name="author" content="Abril Sampietro Cantoni">
-    <title>Abril Sampietro Cantoni - QA Manual</title>
+    <title>Abril Sampietro Cantoni - QA Testing</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navegación -->
-    <nav class="navbar">
+    <!-- Header -->
+    <header class="header">
         <div class="container">
-            <div class="navbar-brand">
-                <a href="#home" class="logo">ASC</a>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Inicio</a></li>
-                <li><a href="#about" class="nav-link">Acerca de</a></li>
-                <li><a href="#skills" class="nav-link">Habilidades</a></li>
-                <li><a href="#projects" class="nav-link">Proyectos</a></li>
-                <li><a href="#contact" class="nav-link">Contacto</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+            <div class="header-content">
+                <div class="logo">ASC</div>
+                <nav class="nav">
+                    <a href="#inicio" class="nav-link">Inicio</a>
+                    <a href="#acerca" class="nav-link">Acerca</a>
+                    <a href="#skills" class="nav-link">Habilidades</a>
+                    <a href="#contacto" class="nav-link">Contacto</a>
+                </nav>
             </div>
         </div>
-    </nav>
+    </header>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
+    <section id="inicio" class="hero">
         <div class="container">
-            <div class="hero-content">
-                <div class="hero-avatar">
-                    <div class="avatar-placeholder">ASC</div>
-                </div>
-                <h1 class="hero-title">Abril Sampietro Cantoni</h1>
-                <p class="hero-subtitle">QA Manual | Testing Manual | Jira | English B2</p>
-                <p class="hero-description">
-                    Profesional especializado en aseguramiento de calidad manual con experiencia en testing, 
-                    gestión de proyectos en Jira y comunicación en inglés.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">Contáctame</a>
-                    <a href="#projects" class="btn btn-secondary">Ver Proyectos</a>
-                </div>
-            </div>
+            <h1 class="hero-title">Abril Sampietro Cantoni</h1>
+            <p class="hero-subtitle">QA Testing | Relaciones Internacionales</p>
+            <p class="hero-text">Especializado en testing funcional, diseño de casos de prueba y aseguramiento de calidad. Con experiencia en metodologías ágiles y herramientas de gestión.</p>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
+    <!-- Acerca de Mí -->
+    <section id="acerca" class="about">
         <div class="container">
             <h2 class="section-title">Acerca de Mí</h2>
-            <div class="about-content">
-                <p class="about-text">
-                    Soy un profesional dedicado al aseguramiento de calidad con enfoque en testing manual. 
-                    Mi objetivo es garantizar que los productos de software cumplan con los más altos estándares de calidad 
-                    a través de pruebas exhaustivas y análisis detallado.
-                </p>
-                <p class="about-text">
-                    Cuento con experiencia en la utilización de herramientas de gestión de proyectos como Jira, 
-                    lo que me permite colaborar efectivamente con equipos de desarrollo. Además, poseo un nivel de inglés B2 
-                    que facilita la comunicación en entornos internacionales.
-                </p>
-                <p class="about-text">
-                    Estoy en búsqueda continua de desafíos que me permitan crecer profesionalmente y contribuir 
-                    a la mejora de la calidad de los productos de software.
-                </p>
+            <p class="about-text">
+                Profesional en formación en Licenciatura en Relaciones Internacionales por UNSAM, con enfoque en QA Testing funcional. Especializado en el diseño de casos de prueba, reporte de bugs y aseguramiento de calidad de software. Experiencia en el uso de metodologías Ágiles (Scrum/Kanban) y herramientas de gestión de proyectos.
+            </p>
+            <p class="about-text">
+                Con sólidas habilidades de liderazgo, comunicación y gestión. Referente institucional de ESI, participante en Parlamento Juvenil 2025 y Programa Empujar 2026. Dominio de idiomas y herramientas ofimáticas avanzadas.
+            </p>
+        </div>
+    </section>
+
+    <!-- Formación Académica -->
+    <section class="education">
+        <div class="container">
+            <h2 class="section-title">Formación Académica</h2>
+            <div class="education-item">
+                <div class="education-header">
+                    <h3>Licenciatura en Relaciones Internacionales</h3>
+                    <span class="status">En Curso</span>
+                </div>
+                <p class="education-institution">UNSAM - Universidad Nacional de San Martín</p>
             </div>
         </div>
     </section>
@@ -81,79 +67,102 @@
     <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
-            <h2 class="section-title">Habilidades Técnicas</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <div class="skill-icon">🧪</div>
-                    <h3 class="skill-title">Testing Manual</h3>
-                    <p class="skill-description">
-                        Diseño y ejecución de casos de prueba, identificación de defectos, 
-                        documentación de resultados y análisis de calidad.
-                    </p>
+            <h2 class="section-title">Habilidades</h2>
+
+            <!-- QA Testing -->
+            <div class="skill-category">
+                <h3 class="category-title">QA Testing</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Testing Funcional</span>
+                    <span class="skill-tag">Diseño de Casos de Prueba</span>
+                    <span class="skill-tag">Reporte de Bugs</span>
+                    <span class="skill-tag">Aseguramiento de Calidad</span>
                 </div>
-                <div class="skill-card">
-                    <div class="skill-icon">📋</div>
-                    <h3 class="skill-title">Jira</h3>
-                    <p class="skill-description">
-                        Gestión de proyectos, creación de tickets, seguimiento de bugs, 
-                        planificación de sprints y reporte de incidencias.
-                    </p>
+            </div>
+
+            <!-- Herramientas -->
+            <div class="skill-category">
+                <h3 class="category-title">Herramientas y Gestión</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Jira</span>
+                    <span class="skill-tag">Scrum</span>
+                    <span class="skill-tag">Kanban</span>
+                    <span class="skill-tag">Metodologías Ágiles</span>
                 </div>
-                <div class="skill-card">
-                    <div class="skill-icon">🌐</div>
-                    <h3 class="skill-title">English B2</h3>
-                    <p class="skill-description">
-                        Comunicación efectiva en inglés, lectura de documentación técnica, 
-                        participación en reuniones internacionales.
-                    </p>
+            </div>
+
+            <!-- Ofimática -->
+            <div class="skill-category">
+                <h3 class="category-title">Ofimática</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Word Avanzado</span>
+                    <span class="skill-tag">PowerPoint Avanzado</span>
+                    <span class="skill-tag">Excel Intermedio</span>
+                </div>
+            </div>
+
+            <!-- Idiomas -->
+            <div class="skill-category">
+                <h3 class="category-title">Idiomas</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Español Nativo</span>
+                    <span class="skill-tag">Inglés B2</span>
+                </div>
+            </div>
+
+            <!-- Soft Skills -->
+            <div class="skill-category">
+                <h3 class="category-title">Liderazgo y Gestión</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Liderazgo</span>
+                    <span class="skill-tag">Comunicación Efectiva</span>
+                    <span class="skill-tag">Gestión de Equipos</span>
+                    <span class="skill-tag">Pensamiento Crítico</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
+    <!-- Experiencias Destacadas -->
+    <section class="experience">
         <div class="container">
-            <h2 class="section-title">Proyectos</h2>
-            <div class="projects-container">
-                <div class="projects-empty">
-                    <div class="empty-icon">📁</div>
-                    <p>Los proyectos se mostrarán aquí pronto...</p>
+            <h2 class="section-title">Experiencias Destacadas</h2>
+            <div class="experience-grid">
+                <div class="experience-card">
+                    <h3>Referente Institucional ESI</h3>
+                    <p>Liderazgo y gestión institucional en Educación Sexual Integral, promoviendo espacios de diálogo y aprendizaje.</p>
+                </div>
+                <div class="experience-card">
+                    <h3>Parlamento Juvenil 2025</h3>
+                    <p>Participación activa en espacios de debate, representación y construcción de propuestas para la comunidad.</p>
+                </div>
+                <div class="experience-card">
+                    <h3>Programa Empujar 2026</h3>
+                    <p>Desarrollo de habilidades de liderazgo, gestión y comunicación efectiva en equipos multidisciplinarios.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <!-- Contacto -->
+    <section id="contacto" class="contact">
         <div class="container">
             <h2 class="section-title">Contacto</h2>
-            <div class="contact-content">
-                <p class="contact-intro">¿Tienes una oportunidad o quieres colaborar? Me encantaría saber de ti.</p>
+            <div class="contact-info">
+                <p>¿Tienes una oportunidad o quieres colaborar?</p>
                 <div class="contact-methods">
-                    <div class="contact-item">
+                    <a href="mailto:sampietrocantoniabril@gmail.com" class="contact-link">
                         <span class="contact-icon">✉️</span>
-                        <div class="contact-info">
-                            <h3>Email</h3>
-                            <a href="mailto:sampietrocantoniabril@gmail.com">sampietrocantoniabril@gmail.com</a>
-                        </div>
-                    </div>
-                    <div class="contact-item">
+                        sampietrocantoniabril@gmail.com
+                    </a>
+                    <a href="tel:+542272550238" class="contact-link">
                         <span class="contact-icon">📱</span>
-                        <div class="contact-info">
-                            <h3>Teléfono</h3>
-                            <a href="tel:+542272550238">+54 9 2227 55-0238</a>
-                        </div>
-                    </div>
-                    <div class="contact-item">
+                        +54 9 2227 55-0238
+                    </a>
+                    <a href="https://www.linkedin.com/in/abril-sampietro-cantoni-241a68422/" target="_blank" rel="noopener noreferrer" class="contact-link">
                         <span class="contact-icon">💼</span>
-                        <div class="contact-info">
-                            <h3>LinkedIn</h3>
-                            <a href="https://www.linkedin.com/in/abril-sampietro-cantoni-241a68422/" target="_blank" rel="noopener noreferrer">
-                                Ver perfil
-                            </a>
-                        </div>
-                    </div>
+                        LinkedIn
+                    </a>
                 </div>
             </div>
         </div>
